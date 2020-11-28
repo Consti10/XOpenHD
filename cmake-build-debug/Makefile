@@ -143,6 +143,60 @@ xopenhd/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/build
 .PHONY : xopenhd/fast
 
+WFBTransmitter.o: WFBTransmitter.cpp.o
+
+.PHONY : WFBTransmitter.o
+
+# target to build an object file
+WFBTransmitter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/WFBTransmitter.cpp.o
+.PHONY : WFBTransmitter.cpp.o
+
+WFBTransmitter.i: WFBTransmitter.cpp.i
+
+.PHONY : WFBTransmitter.i
+
+# target to preprocess a source file
+WFBTransmitter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/WFBTransmitter.cpp.i
+.PHONY : WFBTransmitter.cpp.i
+
+WFBTransmitter.s: WFBTransmitter.cpp.s
+
+.PHONY : WFBTransmitter.s
+
+# target to generate assembly for a file
+WFBTransmitter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/WFBTransmitter.cpp.s
+.PHONY : WFBTransmitter.cpp.s
+
+fec.o: fec.c.o
+
+.PHONY : fec.o
+
+# target to build an object file
+fec.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/fec.c.o
+.PHONY : fec.c.o
+
+fec.i: fec.c.i
+
+.PHONY : fec.i
+
+# target to preprocess a source file
+fec.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/fec.c.i
+.PHONY : fec.c.i
+
+fec.s: fec.c.s
+
+.PHONY : fec.s
+
+# target to generate assembly for a file
+fec.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/fec.c.s
+.PHONY : fec.c.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +233,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... xopenhd"
+	@echo "... WFBTransmitter.o"
+	@echo "... WFBTransmitter.i"
+	@echo "... WFBTransmitter.s"
+	@echo "... fec.o"
+	@echo "... fec.i"
+	@echo "... fec.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

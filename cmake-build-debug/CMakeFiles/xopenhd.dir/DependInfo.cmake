@@ -1,9 +1,19 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/consti10/Desktop/XOpenHD/fec.c" "/home/consti10/Desktop/XOpenHD/cmake-build-debug/CMakeFiles/xopenhd.dir/fec.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/consti10/Desktop/XOpenHD/WFBTransmitter.cpp" "/home/consti10/Desktop/XOpenHD/cmake-build-debug/CMakeFiles/xopenhd.dir/WFBTransmitter.cpp.o"
   "/home/consti10/Desktop/XOpenHD/main.cpp" "/home/consti10/Desktop/XOpenHD/cmake-build-debug/CMakeFiles/xopenhd.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
