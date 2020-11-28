@@ -64,16 +64,16 @@ RM = /home/consti10/Downloads/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/consti10/CLionProjects/untitled
+CMAKE_SOURCE_DIR = /home/consti10/Desktop/XOpenHD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/consti10/CLionProjects/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = /home/consti10/Desktop/XOpenHD/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/untitled.dir/all
+all: CMakeFiles/xopenhd.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/untitled.dir/clean
+clean: CMakeFiles/xopenhd.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/untitled.dir
+# Target rules for target CMakeFiles/xopenhd.dir
 
 # All Build rule for target.
-CMakeFiles/untitled.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/consti10/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target untitled"
-.PHONY : CMakeFiles/untitled.dir/all
+CMakeFiles/xopenhd.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/consti10/Desktop/XOpenHD/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target xopenhd"
+.PHONY : CMakeFiles/xopenhd.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/untitled.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/consti10/CLionProjects/untitled/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/untitled.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/consti10/CLionProjects/untitled/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/untitled.dir/rule
+CMakeFiles/xopenhd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/consti10/Desktop/XOpenHD/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/xopenhd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/consti10/Desktop/XOpenHD/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/xopenhd.dir/rule
 
 # Convenience name for target.
-untitled: CMakeFiles/untitled.dir/rule
+xopenhd: CMakeFiles/xopenhd.dir/rule
 
-.PHONY : untitled
+.PHONY : xopenhd
 
 # clean rule for target.
-CMakeFiles/untitled.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/clean
-.PHONY : CMakeFiles/untitled.dir/clean
+CMakeFiles/xopenhd.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xopenhd.dir/build.make CMakeFiles/xopenhd.dir/clean
+.PHONY : CMakeFiles/xopenhd.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
