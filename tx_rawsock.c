@@ -188,46 +188,6 @@ long long pm_now = 0;
 
 
 
-int pb_transmit_packet(int seq_nr, uint8_t *packet_transmit_buffer, int packet_header_len, const uint8_t *packet_data, int packet_length, int num_interfaces, int param_transmission_mode, int best_adapter) {
-    int i = 0;
-
-
-    /*
-     * Add header outside of FEC
-     */
-    wifi_packet_header_t *wph = (wifi_packet_header_t *)(packet_transmit_buffer + packet_header_len);
-
-    wph->sequence_number = seq_nr;
-
-
-    memcpy(packet_transmit_buffer + packet_header_len + sizeof(wifi_packet_header_t), packet_data, packet_length);
-
-    int plen = packet_length + packet_header_len + sizeof(wifi_packet_header_t);
-
-
-    /*
-     * TODO: fix magic number, 5 means "all interfaces"
-     */
-    if (best_adapter == 5) {
-        for (i = 0; i < num_interfaces; ++i) {
-            //if (write(socks[i], packet_transmit_buffer, plen) < 0 ) fprintf(stderr, "!");
-            if (write(socks[i], packet_transmit_buffer, plen) < 0) {
-                return 1;
-            }
-        }
-    } else {
-        //if (write(socks[best_adapter], packet_transmit_buffer, plen) < 0 ) fprintf(stderr, "!");
-        if (write(socks[best_adapter], packet_transmit_buffer, plen) < 0) {
-            return 1;
-        }
-    }
-
-    return 0;
-}
-
-
-
-
 void pb_transmit_block(packet_buffer_t *pbl, int *seq_nr, int port, int packet_length, uint8_t *packet_transmit_buffer, int packet_header_len, int data_packets_per_block, int fec_packets_per_block, int num_interfaces, int param_transmission_mode, telemetry_data_t *td1, int param_measure) {    
     uint8_t *data_blocks[MAX_DATA_OR_FEC_PACKETS_PER_BLOCK];
     uint8_t fec_pool[MAX_DATA_OR_FEC_PACKETS_PER_BLOCK][MAX_USER_PACKET_LENGTH];

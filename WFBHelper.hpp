@@ -52,6 +52,7 @@
 #define IEEE80211_RADIOTAP_MCS_STBC_2 2
 #define IEEE80211_RADIOTAP_MCS_STBC_3 3
 #define IEEE80211_RADIOTAP_MCS_STBC_SHIFT 5
+
 namespace WFBHelper{
     // copy paste from tx_rawsock
     static u8 u8aRadiotapHeader[] = {
