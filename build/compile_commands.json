@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/consti10/Desktop/XOpenHD/build",
-  "command": "/bin/g++-9    -g   -o CMakeFiles/XOpenHD.dir/main.cpp.o -c /home/consti10/Desktop/XOpenHD/main.cpp",
-  "file": "/home/consti10/Desktop/XOpenHD/main.cpp"
-}
-]
