@@ -6,13 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/consti10/Desktop/XOpenHD/WFBTransmitter.cpp
-WFBTransmitter.h
-/home/consti10/Desktop/XOpenHD/WFBTransmitter.h
-iostream
--
-
-/home/consti10/Desktop/XOpenHD/WFBTransmitter.h
+/home/consti10/Desktop/XOpenHD/WFBHelper.hpp
 cstdlib
 -
 cstdint
@@ -55,6 +49,16 @@ time.h
 -
 unistd.h
 -
+
+/home/consti10/Desktop/XOpenHD/WFBTransmitter.cpp
+WFBTransmitter.h
+/home/consti10/Desktop/XOpenHD/WFBTransmitter.h
+iostream
+-
+
+/home/consti10/Desktop/XOpenHD/WFBTransmitter.h
+WFBHelper.hpp
+/home/consti10/Desktop/XOpenHD/WFBHelper.hpp
 
 /home/consti10/Desktop/XOpenHD/fec.h
 
